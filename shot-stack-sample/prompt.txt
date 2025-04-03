@@ -1,0 +1,26 @@
+
+Production API
+curl -X POST -H "Content-Type: application/json" -H "x-api-key: 1GSC6MeVhQ2FClIfvCKqS4NA8TRVwr91M0VBT1qf" -d @hello.json https://api.shotstack.io/v1/render
+curl -X GET -H "Content-Type: application/json" -H "x-api-key: 1GSC6MeVhQ2FClIfvCKqS4NA8TRVwr91M0VBT1qf" https://api.shotstack.io/edit/v1/render/05656e0e-c1c0-4fad-b1fd-04d18c6fe916
+
+
+
+
+
+SandBox API
+curl -X POST -H "Content-Type: application/json" -H "x-api-key: T0mZ85JFMS87u5WYArIGSwQymiCArn511BWJjCjg
+" -d @news-test.json https://api.shotstack.io/stage/render
+curl -X GET -H "Content-Type: application/json" -H "x-api-key: T0mZ85JFMS87u5WYArIGSwQymiCArn511BWJjCjg
+" https://api.shotstack.io/edit/stage/render/05656e0e-c1c0-4fad-b1fd-04d18c6fe916
+
+
+
+curl -X POST "https://api.elevenlabs.io/v1/text-to-speech/JBFqnCBsd6RMkjVDRZzb?output_format=mp3_44100_128" -H "xi-api-key: sk_06611ffcade027cb19150f069851fc30d240bf813943aa33" -H "Content-Type: application/json"  -d '{ "text": "The first move is what sets everything in motion.", "model_id": "eleven_multilingual_v2" }'
+
+
+curl -X POST -H "xi-api-key: sk_06611ffcade027cb19150f069851fc30d240bf813943aa33" -H "Content-Type: application/json"  -d '{ "text": "The first move is what sets everything in motion.", "model_id": "eleven_multilingual_v2" }' https://api.elevenlabs.io/v1/text-to-speech/JBFqnCBsd6RMkjVDRZzb?output_format=mp3_44100_128
+
+
+curl -X POST "https://api.elevenlabs.io/v1/text-to-speech/JBFqnCBsd6RMkjVDRZzb?output_format=mp3_44100_128" -H "xi-api-key: sk_06611ffcade027cb19150f069851fc30d240bf813943aa33" -H "Content-Type: application/json"  -d '{ "text": "The first move is what sets everything in motion.", "model_id": "eleven_multilingual_v2" }' --output output.mp3
+
+

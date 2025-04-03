@@ -1,0 +1,39 @@
+{
+  "timeline": {
+    "fonts": [
+      {
+        "src": "https://shotstack-assets.s3-ap-southeast-2.amazonaws.com/fonts/NotoSansSC-Regular.otf"
+      }
+    ],
+    "soundtrack": {
+      "src": "https://shotstack-assets.s3-ap-southeast-2.amazonaws.com/music/freepd/fireworks.mp3",
+      "effect": "fadeOut"
+    },
+    "background": "#91a8eb",
+    "tracks": [
+      {
+        "clips": [
+          {
+            "asset": {
+              "type": "html",
+              "html": "<p>Shotstack支持中文</p>",
+              "css": "p { font-family: 'Noto Sans SC'; color: #ffffff; font-size: 32px; text-align: center; }",
+              "width": 820,
+              "height": 100
+            },
+            "start": 0,
+            "length": 10,
+            "transition": {
+              "in": "fade",
+              "out": "fade"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "output": {
+    "format": "mp4",
+    "resolution": "hd"
+  }
+}

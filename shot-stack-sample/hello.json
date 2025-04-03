@@ -1,0 +1,105 @@
+{
+    "timeline": {
+        "soundtrack": {
+            "src": "https://shotstack-assets.s3.amazonaws.com/music/moment.mp3",
+            "effect": "fadeOut"
+        },
+        "background": "#000000",
+        "fonts": [
+            {
+                "src": "https://shotstack-assets.s3.amazonaws.com/fonts/Rubik-Medium.ttf"
+            }
+        ],
+        "tracks": [
+            {
+                "clips": [
+                    {
+                        "asset": {
+                            "type": "text",
+                            "text": ".ישראל אזולאי – חדשנות, תקשורת וטכנולוגיה",
+                            "font": {
+                                "family": "Rubik",
+                                "size": 50,
+                                "color": "#FFFFFF"
+                            }
+                        },
+
+                        "offset" : {
+                            "x" : 0,
+                            "y" : 0.4
+                        },
+
+
+                        "start": 0,
+                        "length": 5
+                    }
+                ]
+            },
+            {
+                "clips": [
+                    {
+                        "asset": {
+                            "type": "text",
+                            "text": "גדגדגדגדג",
+                            "font": {
+                                "family": "Rubik",
+                                "size": 40,
+                                "color": "#FFFFFF"
+                            }
+                        },
+
+                        "offset" : {
+                            "x" : 0,
+                            "y" : 0.2
+                        },
+
+
+                        "start": 0,
+                        "length": 5
+                    }
+                ]
+            },
+            {
+                "clips": [
+                    {
+                        "asset": {
+                            "type": "html",
+                            "html": "<p>גדגדגדגדגdsdsd</p>",
+                            "css": "p {font-family: 'Rubik'; color: #ffffff; font-size: 42px; text-align: center; }",
+                            "width": 400,
+                            "height": 200,
+                            "background": "transparent",
+                            "position": "center"
+                        },
+                        "start": 0,
+                        "length": 5,
+                        "transition": {
+                            "in": "fade",
+                            "out": "fade"
+                        }
+                    }
+                ]
+            },
+            {
+                "clips": [
+                    {
+                        "asset": {
+                            "type": "video",
+                            "src": "https://shotstack-assets.s3.amazonaws.com/footage/night-sky.mp4"
+                        },
+                        "start": 0,
+                        "length": 5,
+                        "transition": {
+                            "in": "fade",
+                            "out": "fade"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "output": {
+        "format": "mp4",
+        "resolution": "sd"
+    }
+}
