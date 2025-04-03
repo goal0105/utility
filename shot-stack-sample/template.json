@@ -1,0 +1,68 @@
+{
+  "timeline": {
+    "fonts": [
+      {
+        "src": "https://templates.shotstack.io/holiday-season-glam-template/f81597c7-7e30-4fe1-a3e5-061b4240f69a/source.ttf"
+      }
+    ],
+    "tracks": [
+      {
+        "clips": [
+          {
+            "length": "end",
+            "asset": {
+              "type": "image",
+              "src": "https://goal-storage.b-cdn.net/image/logo.png"
+            },
+            "start": 0,
+            "scale": 0.144,
+            "offset": {
+              "x": 0,
+              "y": -0.428
+            },
+            "position": "center"
+          }
+        ]
+      },
+      {
+        "clips": [
+          {
+            "length": "auto",
+            "asset": {
+              "type": "video",
+              "src": "{{video_file}}" 
+            },
+            "start": 0,
+            "scale": 0.821,
+            "offset": {
+              "x": 0,
+              "y": -0.050
+            },
+            "position": "center"
+          }
+        ]
+      },
+      {
+        "clips": [
+          {
+            "length": "end",
+            "fit": "contain",
+            "asset": {
+              "type": "image",
+              "src": "https://goal-storage.b-cdn.net/video/template.gif"
+            },
+            "start": 0
+          }
+        ]
+      }
+    ]
+  },
+  "output": {
+    "format": "mp4",
+    "fps": 25,
+    "size": {
+      "width": 1080,
+      "height": 1920
+    }
+  }
+}

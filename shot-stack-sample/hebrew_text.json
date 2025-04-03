@@ -1,0 +1,63 @@
+{
+    "timeline": {
+        "soundtrack": {
+            "src": "https://shotstack-assets.s3-ap-southeast-2.amazonaws.com/music/freepd/motions.mp3",
+            "effect": "fadeOut"
+        },
+        "fonts": [
+            {
+                "src": "https://templates.shotstack.io/basic/asset/font/opensans-regular.ttf"
+            }
+        ],
+        "background": "#000000",
+        "tracks": [
+            {
+                "clips":[
+					   {
+						  "asset": {
+							  "type": "html",
+							  "html": "<p>גדגדגדגדגdsdsd</p>",
+							  "css": "p {font-family: 'Open Sans'; color: #ffffff; font-size: 42px; text-align: center; }",
+							  "width": 400,
+							  "height": 200,
+							  "background": "transparent",
+							  "position": "center"							 
+						  },
+                        "start": 4,
+                        "length": 11,
+                        "offset": {
+                            "x": -0.25,
+                            "y": -0.16
+                        },
+                        "transition": {
+                            "in": "fade",
+                            "out": "fade"
+                        },
+                        "effect": "zoomIn"
+                    }
+                ]
+            },
+            {
+                "clips": [
+                    {
+                        "asset": {
+                            "type": "video",
+                            "src": "https://shotstack-assets.s3-ap-southeast-2.amazonaws.com/footage/earth.mp4",
+                            "trim": 5
+                        },
+                        "start": 0,
+                        "length": 15,
+                        "transition": {
+                            "in": "fade",
+                            "out": "fade"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "output": {
+        "format": "mp4",
+        "resolution": "sd"
+    }
+}

@@ -1,0 +1,255 @@
+{
+    "timeline": {
+      "fonts": [
+        {
+          "src": "https://templates.shotstack.io/breaking-news-summary/a87b7ba9-8d67-4e0f-83ff-ac36d3f3fc5b/source.ttf"
+        }
+      ],
+      "background": "#efefef",
+      "tracks": [
+        {
+            "clips": [
+              {
+                "asset": {
+                  "type": "caption",
+                  "src": "alias://voiceover",
+                                "background": {
+                                    "color": "#000000",
+                                    "padding": 6,
+                                    "borderRadius": 3,
+                                    "opacity": 0.7
+                                }, 
+                  "font": {
+                    "color": "#ffffff",
+                    "family": "Montserrat ExtraBold",
+                    "size": 20,
+                    "lineHeight": 0.8
+                  },
+                  "margin": {
+                    "top": 0.85
+                  }
+                },
+                "start": 0,
+                "length": "end"
+              }
+            ]
+          },
+          {
+            "clips": [
+              {
+                "alias": "voiceover",
+                "asset": {
+                  "type": "text-to-speech",
+                  "text": "{{new_style_article}}",
+                  "voice": "Joanna"
+                },            
+                "start": 0,
+                "length": "auto"
+              }
+            ]
+          },
+        {
+          "clips": [
+            {
+              "asset": {
+                "type": "text",
+                "text": "{{headline}}",
+                "font": {
+                  "family": "Raleway",
+                  "color": "#303030",
+                  "size": 43
+                },
+                "alignment": {
+                  "horizontal": "left"
+                },
+                "width": 442,
+                "height": 200
+              },
+              "fit": "none",
+              "scale": 1,
+              "offset": {
+                "x": -0.180,
+                "y": 0.424
+              },
+              "position": "center",
+              "transition": {
+                "in": "slideLeftSlow"
+              },
+              "start": 1.3,
+              "length": "end"
+            }
+          ]
+        },
+        {
+          "clips": [
+            {
+              "asset": {
+                "type": "text",
+                "text": "NEWS",
+                "font": {
+                  "family": "Montserrat ExtraBold",
+                  "color": "#ffffff",
+                  "size": 43
+                },
+                "alignment": {
+                  "horizontal": "center"
+                },
+                "width": 400,
+                "height": 72
+              },
+              "fit": "none",
+              "scale": 1,
+              "offset": {
+                "x": 0.355,
+                "y": 0.427
+              },
+              "position": "center",
+              "start": 1.25,
+              "transition": {
+                "in": "slideRightSlow"
+              },
+              "length": "end"
+            }
+          ]
+        },
+        {
+          "clips": [
+            {
+              "asset": {
+                "type": "video",
+                "src": "https://templates.shotstack.io/breaking-news-summary/zzy9evz0-2wqo-li08-iytu-4wocle1anmht/source.mov"
+              },
+              "start": 0,
+              "offset": {
+                "x": 0.547,
+                "y": 0.459
+              },
+              "position": "center",
+              "scale": 0.161,
+              "length": "end"
+            }
+          ]
+        },
+        {
+          "clips": [
+            {
+              "asset": {
+                "type": "text",
+                "text": "TODAY'S",
+                "font": {
+                  "family": "Montserrat ExtraBold",
+                  "color": "#eea91a",
+                  "size": 47
+                },
+                "alignment": {
+                  "horizontal": "center"
+                },
+                "width": 400,
+                "height": 72
+              },
+              "fit": "none",
+              "scale": 1,
+              "offset": {
+                "x": 0.339,
+                "y": 0.471
+              },
+              "position": "center",
+              "start": 1,
+              "length": "end",
+              "transition": {
+                "in": "slideRightSlow"
+              }
+            }
+          ]
+        },
+        {
+          "clips": [
+            {
+              "asset": {
+                "type": "image",
+                "src": "https://templates.shotstack.io/breaking-news-summary/e546d9c1-227d-4f85-b5bc-ee12a86f0782/source.jpg"
+              },
+              "fit": "none",
+              "offset": {
+                "x": -0.192,
+                "y": 0.424 
+              },
+              "position": "center",
+              "transition": {
+                "in": "carouselRight"
+              },
+              "start": 1.25,
+              "opacity": 0.3,
+              "scale" : 0.55,
+              "length": "end"
+            }
+          ]
+        },
+        {
+          "clips": [
+            {
+              "length": "end",
+              "asset": {
+                "type": "image",
+                "src": "https://goal-storage.b-cdn.net/image/the-jerusalem-post-tel-aviv-chaim-v-chessed-the-jerusalem-report-the-times-of-israel-others-2349a7dc4a9b0e2c935578e0b2696031.png"
+              },
+              "start": 0,
+              "offset": {
+                "x": -0.217,
+                "y": -0.473
+              },
+              "position": "center",
+              "scale": 0.1990
+            }
+          ]
+        },
+        {
+          "clips": [
+            {
+              "asset": {
+                "type": "video",
+                "src": "https://templates.shotstack.io/breaking-news-summary/zzy9evh8-0x80-ii37-ouvb-00aabf0gxtoq/source.mov"
+              },
+              "start": 0,
+              "offset": {
+                "x": 1.174,
+                "y": 0.048
+              },
+              "position": "center",
+              "length": "end",
+              "scale": 1.169
+            }
+          ]
+        },
+        {
+          "clips": [
+            {
+              "asset": {
+                "type": "video",
+                "src": "https://cdnj1.com/assets/1355771/inbox/1000342574/200x356%286s%29.mp4#t=0.1",
+                "volume": 0
+              },
+              "scale": 0.921,
+              "offset": {
+                "x": 0,
+                "y": -0.012
+              },
+              "transition": {
+                "in": "carouselDown"
+              },
+              "position": "center",
+              "length": "auto",
+              "start": 0
+            }
+          ]
+        }
+      ]
+    },
+    "output": {
+      "format": "mp4",
+      "size": {
+        "width": 720,
+        "height": 1280
+      }
+    }
+  } 
