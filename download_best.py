@@ -9,7 +9,7 @@ class Download:
     def __init__(self, output_dir=os.getcwd(), debug=False):
         self.output_dir = output_dir
         self.debug_flag = debug
-        self.model_bin = "yt-dlp.exe" 
+        self.model_bin = "yt-dlp.exe"     
         self.opts = []
 
         # Ensure 'uploads' directory exists
