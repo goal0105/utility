@@ -75,27 +75,6 @@ class Download:
             else:
                 raise BadRequest(f"Failed to download video: {str(e)}")
     
-    def convert_to_wav(self, input_path: str, output_path: str) -> None:
-        """Convert audio to WAV format suitable for transcription."""
-        print("Converting audio to WAV format...")
-        try:
-            (
-                ffmpeg
-                .input(input_path)
-                .output(output_path, 
-                        acodec='pcm_s16le',
-                        ac=1,
-                        ar='16k',
-                        loglevel='error')
-                .overwrite_output()
-                .run(capture_stdout=True, capture_stderr=True)
-            )
-            
-            print("Audio conversion completed successfully.")
-        except ffmpeg.Error as e:
-            logger.error(f"FFmpeg error: {e.stderr.decode() if e.stderr else str(e)}")
-            raise RuntimeError(f"Audio conversion failed: {str(e)}")
-            
     def download_from_url(self, url) -> None:
         try:
             if "youtube" in url.lower():
@@ -105,15 +84,11 @@ class Download:
                     try:
                         # Download Youtube audio
                         downloaded_path = self.download_youtube_audio(url, temp_dir)
+                    
                         if not os.path.exists(downloaded_path):
                             raise InternalServerError("Failed to download audio")
-                        
-                        app_dir = Path(__file__).resolve().parent
-                        download_dir = app_dir / self.uploads_dir
 
-                        # Convert to WAV format for transcription
-                        wav_path = os.path.join(download_dir, f"{uuid.uuid4()}.wav")
-                        self.convert_to_wav(downloaded_path, wav_path)
+                        print(f"Downloaded audio path: {downloaded_path}")
                         
                     except Exception as e:
                         logger.error(f"Youtube processing error: {str(e)}", exc_info=True)
