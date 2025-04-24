@@ -76,7 +76,6 @@ class Download:
                 raise BadRequest(f"Failed to download video: {str(e)}")
     
     def convert_to_wav(input_path: str, output_path: str) -> None:
-        
         """Convert audio to WAV format suitable for transcription."""
         print("Converting audio to WAV format...")
         try:
