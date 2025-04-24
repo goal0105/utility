@@ -10,12 +10,7 @@ if __name__ == "__main__":
 
     # video_url = sys.argv[1]
     downloader = Download()  # Customize output dir as needed
-    
-    counter = 0
-    while(1):
-        counter += 1
-        print(f"Downloading {counter}")
-        downloader.download_from_url("https://www.youtube.com/watch?v=1MwSoB0gnM4")
+    downloader.download_from_url("https://www.youtube.com/watch?v=1MwSoB0gnM4")
  
 
     

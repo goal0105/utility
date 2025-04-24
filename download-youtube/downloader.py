@@ -82,6 +82,10 @@ class Download:
                 """Download YouTube audio and convert to WAV format"""
                 with tempfile.TemporaryDirectory() as temp_dir:
                     try:
+
+                        # app_dir = Path(__file__).resolve().parent
+                        # download_dir = app_dir / self.uploads_dir
+
                         # Download Youtube audio
                         downloaded_path = self.download_youtube_audio(url, temp_dir)
                     
