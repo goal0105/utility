@@ -1,6 +1,6 @@
 
 import sys
-from download_best import Download
+from downloader import Download
    
 # Example Usage  
 if __name__ == "__main__":
