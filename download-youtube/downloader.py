@@ -26,7 +26,7 @@ class Download:
         cookie_file = os.path.join(app_dir, 'uploads', 'youtube', 'cookies.txt')
         
         ydl_opts = {
-            'format': 'bestvideo[height<=720][ext=mp4]+bestaudio[ext=m4a]/[height<=720][ext=mp4]', #  bestaudio[ext=m4a]/bestaudio/best
+            'format': 'bestvideo[height<=720][ext=mp4]+bestaudio[ext=m4a]/[height<=720][ext=mp4]', #  bestaudio[ext=m4a]/bestaudio/best,  
             'outtmpl': os.path.join(temp_dir, '%(id)s.%(ext)s'),
             'quiet': True,
             'no_warnings': True,
@@ -83,11 +83,11 @@ class Download:
                 with tempfile.TemporaryDirectory() as temp_dir:
                     try:
 
-                        # app_dir = Path(__file__).resolve().parent
-                        # download_dir = app_dir / self.uploads_dir
+                        app_dir = Path(__file__).resolve().parent
+                        download_dir = app_dir / self.uploads_dir
 
                         # Download Youtube audio
-                        downloaded_path = self.download_youtube_audio(url, temp_dir)
+                        downloaded_path = self.download_youtube_audio(url, download_dir)
                     
                         if not os.path.exists(downloaded_path):
                             raise InternalServerError("Failed to download audio")
