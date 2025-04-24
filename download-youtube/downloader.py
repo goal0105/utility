@@ -26,7 +26,7 @@ class Download:
         cookie_file = os.path.join(app_dir, 'uploads', 'youtube', 'cookies.txt')
         
         ydl_opts = {
-            'format': 'bestaudio[ext=m4a]/bestaudio/best',
+            'format': 'bestvideo[height<=720][ext=mp4]+bestaudio[ext=m4a]/[height<=720][ext=mp4]', #  bestaudio[ext=m4a]/bestaudio/best
             'outtmpl': os.path.join(temp_dir, '%(id)s.%(ext)s'),
             'quiet': True,
             'no_warnings': True,
