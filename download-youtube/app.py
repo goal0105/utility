@@ -9,7 +9,6 @@ if __name__ == "__main__":
         sys.exit(1)
 
     video_url = sys.argv[1]
-    downloader = Download()  # Customize output dir as needed
-    # while(1):
+    downloader = Download()   
     downloader.download_from_url(video_url)
     
