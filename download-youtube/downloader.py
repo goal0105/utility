@@ -1,14 +1,11 @@
 import os
-import subprocess
 from datetime import datetime
 import logging
 from pathlib import Path
 import yt_dlp
 from yt_dlp.utils import DownloadError
 from werkzeug.exceptions import BadRequest, InternalServerError
-import ffmpeg
 import tempfile
-import uuid
 
 logger = logging.getLogger(__name__)
 
@@ -18,8 +15,8 @@ class Download:
         self.debug_flag = debug
          
         # Ensure 'uploads' directory exists
-        self.uploads_dir = os.path.join(self.output_dir, "uploads")
-        os.makedirs(self.uploads_dir, exist_ok=True)
+        self.downloads_dir = os.path.join(self.output_dir, "downloads")
+        os.makedirs(self.downloads_dir, exist_ok=True)
 
     def download_youtube_audio(self, url: str, temp_dir : str) -> str:
         app_dir = Path(__file__).resolve().parent
@@ -84,7 +81,7 @@ class Download:
                     try:
 
                         app_dir = Path(__file__).resolve().parent
-                        download_dir = app_dir / self.uploads_dir
+                        download_dir = app_dir / self.downloads_dir
 
                         # Download Youtube audio
                         downloaded_path = self.download_youtube_audio(url, download_dir)
