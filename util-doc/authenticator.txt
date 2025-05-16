@@ -1,0 +1,6 @@
+otpauth://totp/Google:ronipeterstar%40gmail.com?secret=tyzobq7e65qqwrrw7g7b2i4j53fnremv&issuer=Google
+otpauth://totp/Google:future.star.1216%40gmail.com?secret=ygqgq4hltufpgdxqo2hbv6k6gfyyovoq&issuer=Google
+otpauth://totp/Google:chong.dragon.1216%40gmail.com?secret=w7eocs6knqbetfzdiipdxte37p6ssgcm&issuer=Google
+otpauth://totp/Google:springtiger.1214%40gmail.com?secret=k77jel7vdgedsxhqlt2hnjqhtx4ft235&issuer=Google
+otpauth://totp/Google:chong.2021.1216%40gmail.com?secret=tk3mptfqcvzld22ah27q6otap3md6esu&issuer=Google
+otpauth://totp/Google:turip.0920%40gmail.com?secret=ydbievgx4lbbxfay4e6wufu5mkgoismb&issuer=Google
